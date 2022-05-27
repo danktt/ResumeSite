@@ -1,4 +1,4 @@
-import { Bookmark, ChatTeardropDots } from "phosphor-react";
+import { Bookmark } from "phosphor-react";
 import { Popover } from "@headlessui/react";
 import { WidgetForm } from "../WidgetFrom";
 
