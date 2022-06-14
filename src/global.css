@@ -3,5 +3,11 @@
 @tailwind utilities;
 
 body {
-  @apply bg-slate-800
+  @apply bg-slate-800 text-white 
+}
+
+@layer base {
+  html {
+    font-family: "Poppins";
+  }
 }

@@ -2,8 +2,13 @@ module.exports = {
   // darkMode: 'className',
   content: ["./src/**/*.tsx"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "yellow-figma": "#FCA311"
+      }
+     
+    },
     
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }
