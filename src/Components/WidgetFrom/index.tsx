@@ -1,62 +1,81 @@
-
-import whatsappImage from "../../assets/whatsapp.svg"
-import instagramImage from "../../assets/instagram.svg"
-import twitterImage from "../../assets/twitter.svg"
+import whatsappImage from "../../assets/whatsapp.svg";
+import instagramImage from "../../assets/instagram.svg";
+import twitterImage from "../../assets/twitter.svg";
 import { useState } from "react";
 import { FeedbackTypesStep } from "./Steps/FeedbackTypeStep";
 
-
+import { BsGithub, BsLinkedin, BsMessenger, BsTwitter } from "react-icons/bs";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { FaFacebookSquare } from "react-icons/fa";
+import { AiFillInstagram } from "react-icons/ai";
 
 export const feedbackTypes = {
-  BUG:{
+  LINKEDIN: {
+    title: "Linkedin",
+    icon: {
+      source: <BsLinkedin />,
+      alt: "linkedin",
+    },
+  },
+  GITHUB: {
+    title: "Github",
+    icon: {
+      source: <BsGithub />,
+      alt: "github",
+    },
+  },
+  WHATSAPP: {
     title: "Whatsapp",
-    image: {
-      source: whatsappImage,
-      alt: "whatsapp"
-    }
+    icon: {
+      source: <IoLogoWhatsapp />,
+      alt: "whatsapp",
+    },
   },
-  IDEA:{
+  INSTA: {
     title: "Instagram",
-    image: {
-      source: instagramImage,
-      alt: "instagram"
-    }
+    icon: {
+      source: <AiFillInstagram />,
+      alt: "instagram",
+    },
   },
-  OTHER:{
+  FACE: {
+    title: "Facebook",
+    icon: {
+      source: <FaFacebookSquare />,
+      alt: "facebook",
+    },
+  },
+  TWITTER: {
     title: "Twitter",
-    image: {
-      source: twitterImage,
-      alt: "twitter"
-    }
+    icon: {
+      source: <BsTwitter />,
+      alt: "twitter",
+    },
   },
-}
+  MESSE: {
+    title: "Messenger",
+    icon: {
+      source: <BsMessenger />,
+      alt: "messenger",
+    },
+  },
+};
 
-export type FeedbackProps = keyof typeof feedbackTypes
+export type FeedbackProps = keyof typeof feedbackTypes;
 
 export function WidgetForm() {
-
-  const [ feedbackType, setFeedbackType ] = useState<FeedbackProps | null>(null)
-
+  const [feedbackType, setFeedbackType] = useState<FeedbackProps | null>(null);
 
   return (
-    <div className="bg-zinc-600 p-4 relative rounded-2xl mb-4 flex flex-col items-center shadow-lg w-[calc(100vw-2rem)] md:w-auto">
-     
-
+    <div className="bg-black-figma p-4 relative rounded-2xl mb-4 flex flex-col items-center shadow-lg w-[calc(100vw-5rem)] md:w-auto">
       {!feedbackType ? (
-        <FeedbackTypesStep  onFeedbackTypeChanged={setFeedbackType}/>
+        <FeedbackTypesStep onFeedbackTypeChanged={setFeedbackType} />
       ) : (
         <h1>Hello</h1>
       )}
       <footer>
-      Made with ❤️ by
-        <a
-          className="underline underline-offset-2 ml-1 text-amber-600"
-          target="_black"
-          href="https://github.com/danktt"
-        >
-  
-          Danilo Miranda
-        </a>
+        Made by
+        <span className=" ml-1 text-yellow-figma">Danilo Miranda</span>
       </footer>
     </div>
   );
