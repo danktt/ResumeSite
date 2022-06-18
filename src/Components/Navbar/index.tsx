@@ -11,11 +11,26 @@ import { FaNewspaper } from "react-icons/fa";
 import { RiContactsBookFill } from "react-icons/ri";
 
 const navigation = [
-  { name: "Home", href: "#", current: true, icon: <AiFillHome /> },
-  { name: "About", href: "#", current: false, icon: <BsFillFilePersonFill /> },
-  { name: "Education", href: "#", current: false, icon: <IoSchool /> },
-  { name: "Experience", href: "#", current: false, icon: <FaNewspaper /> },
-  { name: "Contact", href: "#", current: false, icon: <RiContactsBookFill /> },
+  { name: "Home", href: "#home", current: true, icon: <AiFillHome /> },
+  {
+    name: "About",
+    href: "#about",
+    current: false,
+    icon: <BsFillFilePersonFill />,
+  },
+  { name: "Education", href: "#education", current: false, icon: <IoSchool /> },
+  {
+    name: "Experience",
+    href: "#experience",
+    current: false,
+    icon: <FaNewspaper />,
+  },
+  {
+    name: "Contact",
+    href: "#contact",
+    current: false,
+    icon: <RiContactsBookFill />,
+  },
 ];
 
 function classNames(...classes: any) {
@@ -101,7 +116,7 @@ export default function Navbar() {
                                   : "text-white  hover:text-yellow-figma flex gap-1.5 items-center justify-center  text-lg",
                                 "px-3 py-2 rounded-md text-sm font-medium justify-center text-lg"
                               )}
-                              aria-current={item.current ? "page" : undefined}
+                              aria-current={item.current ? "page" : true}
                             >
                               {item.icon}
                               {item.name}
@@ -127,7 +142,7 @@ export default function Navbar() {
                   /> */}
 
                   <a
-                    href="/"
+                    href="#home"
                     className="underline decoration-yellow-figma mt-auto hidden md:block h-8 w-auto text-white font-bold underline  underline-offset-2 ml-1 "
                   >
                     DANKTT
@@ -148,7 +163,7 @@ export default function Navbar() {
                             : "text-gray-300 hover:bg-gray-700 hover:text-yellow-figma flex gap-1.5 items-center",
                           "px-3 py-2 rounded-md text-sm font-medium"
                         )}
-                        aria-current={item.current ? "page" : undefined}
+                        aria-current={item.current ? "page" : true}
                       >
                         {item.icon}
                         {item.name}

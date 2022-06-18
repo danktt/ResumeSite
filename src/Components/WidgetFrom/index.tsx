@@ -1,6 +1,3 @@
-import whatsappImage from "../../assets/whatsapp.svg";
-import instagramImage from "../../assets/instagram.svg";
-import twitterImage from "../../assets/twitter.svg";
 import { useState } from "react";
 import { FeedbackTypesStep } from "./Steps/FeedbackTypeStep";
 
