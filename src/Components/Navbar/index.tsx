@@ -1,5 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { Disclosure, Menu, Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
@@ -38,11 +38,39 @@ function classNames(...classes: any) {
 }
 
 export default function Navbar() {
+  const [isTopNav, setIsTopNav] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsTopNav(true);
+      } else {
+        setIsTopNav(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  // function ScrollTopNav() {
+  //   if (window.scro > 1) {
+  //     setIsTopNav(true);
+  //   }
+  // }
+
   return (
-    <Disclosure as="nav" className="bg-transparent w-full fixed">
+    <Disclosure
+      as="nav"
+      className={`${
+        isTopNav ? "bg-slate-600  " : "bg-transparent"
+      } w-full fixed`}
+    >
       {({ open }) => (
         <>
-          <div className="max-w-5xl mx-auto px-2 md:px-6 lg:px-8 ">
+          <div className="max-w-5xl mx-auto px-2 md:px-6 lg:px-8">
             <div className="relative flex items-center justify-center h-16">
               <div className="absolute inset-y-0 left-0 flex items-center md:hidden">
                 {/* Mobile menu button*/}
@@ -112,7 +140,7 @@ export default function Navbar() {
                               href={item.href}
                               className={classNames(
                                 item.current
-                                  ? "bg-yellow-figma text-white flex gap-1.5 items-center justify-center text-lg"
+                                  ? "bg-yellow-figma text-white  flex gap-1.5 items-center justify-center text-lg"
                                   : "text-white  hover:text-yellow-figma flex gap-1.5 items-center justify-center  text-lg",
                                 "px-3 py-2 rounded-md text-sm font-medium justify-center text-lg"
                               )}
@@ -143,7 +171,7 @@ export default function Navbar() {
 
                   <a
                     href="#home"
-                    className="underline decoration-yellow-figma mt-auto hidden md:block h-8 w-auto text-white font-bold underline  underline-offset-2 ml-1 "
+                    className="underline decoration-yellow-figma mt-auto hidden md:block h-8 w-auto text-2xl text-white font-bold underline  underline-offset-2 ml-1 "
                   >
                     DANKTT
                   </a>
@@ -159,8 +187,8 @@ export default function Navbar() {
                         href={item.href}
                         className={classNames(
                           item.current
-                            ? "bg-gray-900 text-yellow-figma flex gap-1.5 items-center"
-                            : "text-gray-300 hover:bg-gray-700 hover:text-yellow-figma flex gap-1.5 items-center",
+                            ? "bg-gray-900 text-yellow-figma text-lg flex gap-1.5 items-center"
+                            : "text-gray-300 hover:bg-gray-700  hover:text-yellow-figma flex gap-1.5 items-center",
                           "px-3 py-2 rounded-md text-sm font-medium"
                         )}
                         aria-current={item.current ? "page" : true}
@@ -187,7 +215,7 @@ export default function Navbar() {
                     <Menu.Button className="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
                       <span className="sr-only">Open user menu</span>
                       <img
-                        className="h-8 w-8 rounded-full"
+                        className="h-14  rounded-full"
                         src="https://github.com/danktt.png"
                         alt="Danilo"
                       />
@@ -213,7 +241,7 @@ export default function Navbar() {
                               "block px-4 py-2 text-sm text-gray-700"
                             )}
                           >
-                            Your Profile
+                            Download CV
                           </a>
                         )}
                       </Menu.Item>
@@ -227,21 +255,7 @@ export default function Navbar() {
                               "block px-4 py-2 text-sm text-gray-700"
                             )}
                           >
-                            Settings
-                          </a>
-                        )}
-                      </Menu.Item>
-                      <Menu.Item>
-                        {({ active }) => (
-                          // eslint-disable-next-line
-                          <a
-                            href="#"
-                            className={classNames(
-                              active ? "bg-gray-100" : "",
-                              "block px-4 py-2 text-sm text-gray-700"
-                            )}
-                          >
-                            Sign out
+                            Setting
                           </a>
                         )}
                       </Menu.Item>

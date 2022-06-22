@@ -5,8 +5,6 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import Typewriter from "typewriter-effect";
 
-let ponto = <span style={{ color: "#333" }}>.</span>;
-console.log(ponto);
 export default function Home() {
   return (
     <>
@@ -15,11 +13,11 @@ export default function Home() {
         className=" hero h-screen bg-hero-pattern  bg-no-repeat bg-center"
       >
         <div>
-          <div className="flex flex-col mb-9 w-[735px]  lg:items-start  items-center    ">
+          <div className="flex flex-col mb-9 lg:w-[735px]  lg:items-start  items-center    ">
             <h1 className="lg:text-4xl md:text-3xl text-2xl md:mb-4 mb-4 font-light lg:pl-20 ">
               Welcome
             </h1>
-            <span className=" text-center  lg:text-[65px] md:text-[50px] text-3xl font-bold ">
+            <span className=" text-center  lg:text-[65px] md:text-[50px] text-[32px] font-bold ">
               {/* I’m Danilo Miranda */}
               {/* <span className="text-yellow-figma lg:text-7xl">.</span> */}
               <Typewriter
@@ -32,7 +30,7 @@ export default function Home() {
                 }}
               />
             </span>
-            <h2 className="lg:text-4xl md:mt-2 mt-2 md:text-3xl text-2xl text-center font-light lg:pl-9  ">
+            <h2 className="lg:text-4xl md:mt-2 mt-2 md:text-3xl text-[20px] text-center font-light lg:pl-9  ">
               SOFTWARE DEVELOPER
             </h2>
           </div>

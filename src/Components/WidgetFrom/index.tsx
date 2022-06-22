@@ -64,7 +64,7 @@ export function WidgetForm() {
   const [feedbackType, setFeedbackType] = useState<FeedbackProps | null>(null);
 
   return (
-    <div className="bg-black-figma p-4 relative rounded-2xl mb-4 flex flex-col items-center shadow-lg w-[calc(100vw-5rem)] md:w-auto">
+    <div className="bg-black-figma p-4 relative rounded-2xl mb-4 flex flex-col items-center shadow-lg w-[calc(100vw-2rem)] md:w-auto">
       {!feedbackType ? (
         <FeedbackTypesStep onFeedbackTypeChanged={setFeedbackType} />
       ) : (

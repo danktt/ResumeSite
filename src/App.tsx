@@ -9,6 +9,7 @@ import SmoothScroll from "smooth-scroll";
 
 import Data from "./Data/data.json";
 import { useEffect, useState } from "react";
+// import { Layout } from "./patterns/layout";
 
 interface pageDataProps {
   About: any;
@@ -21,7 +22,7 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
 
 function App() {
   const [pageData, setPageData] = useState({} as pageDataProps);
-  console.log(typeof pageData);
+
   useEffect(() => {
     setPageData(Data as any);
   }, []);
@@ -30,7 +31,7 @@ function App() {
     <>
       <Navbar />
       <Home />
-      <About data={pageData.About} />
+      <About />
       <Education />
       <Experience />
       <Contact />
