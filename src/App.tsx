@@ -23,6 +23,12 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
 function App() {
   const [pageData, setPageData] = useState({} as pageDataProps);
 
+  // let first = document.getElementById("home");
+  // if (first) first.style.position = "relative";
+
+  // let second = document.getElementById("about");
+  // if (second) second.style.position = "relative";
+
   useEffect(() => {
     setPageData(Data as any);
   }, []);
@@ -30,8 +36,8 @@ function App() {
   return (
     <>
       <Navbar />
-      <Home />
       <About />
+      <Home />
       <Education />
       <Experience />
       <Contact />

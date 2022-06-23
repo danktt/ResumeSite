@@ -42,7 +42,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
+      if (window.scrollY > 1) {
         setIsTopNav(true);
       } else {
         setIsTopNav(false);
@@ -65,7 +65,7 @@ export default function Navbar() {
     <Disclosure
       as="nav"
       className={`${
-        isTopNav ? "bg-slate-600  " : "bg-transparent"
+        isTopNav ? "bg-slate-600  " : "bg-transparent z-20"
       } w-full fixed`}
     >
       {({ open }) => (

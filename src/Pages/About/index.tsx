@@ -6,7 +6,10 @@ interface dataProps {
 
 export default function About({ data }: dataProps) {
   return (
-    <div id="about" className="h-screen bg-black-figma   scroll-smooth">
+    <div
+      id="about"
+      className="h-screen bg-black-figma   scroll-smooth absolute "
+    >
       <div className="flex items-center justify-center pt-20">
         <span className="text-3xl text-yellow-figma underline  ">
           <div className="relative rounded-sm  h-[9px] w-[9px] rotate-45 top-[36px] right-[8px]  bg-yellow-figma border border-solid border-yellow-figma  " />
