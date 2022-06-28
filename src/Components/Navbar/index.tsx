@@ -9,6 +9,7 @@ import { BsFillFilePersonFill } from "react-icons/bs";
 import { IoSchool } from "react-icons/io5";
 import { FaNewspaper } from "react-icons/fa";
 import { RiContactsBookFill } from "react-icons/ri";
+import { MdOutlineMiscellaneousServices } from "react-icons/md";
 
 const navigation = [
   { name: "Home", href: "#home", current: true, icon: <AiFillHome /> },
@@ -17,6 +18,12 @@ const navigation = [
     href: "#about",
     current: false,
     icon: <BsFillFilePersonFill />,
+  },
+  {
+    name: "Services",
+    href: "#services",
+    current: false,
+    icon: <MdOutlineMiscellaneousServices />,
   },
   { name: "Education", href: "#education", current: false, icon: <IoSchool /> },
   {
@@ -66,7 +73,7 @@ export default function Navbar() {
       as="nav"
       className={`${
         isTopNav ? "bg-slate-600  " : "bg-transparent z-20"
-      } w-full fixed`}
+      } w-full fixed z-20`}
     >
       {({ open }) => (
         <>

@@ -4,29 +4,26 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { FaFacebookSquare } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import Typewriter from "typewriter-effect";
-import { useEffect, useState } from "react";
 
 export default function Home() {
-  const [isTopScroll, setIsTopScroll] = useState(false);
-  console.log(isTopScroll);
-  useEffect(() => {
-    const isScroll = () => {
-      if (window.scrollY > 0) {
-        setIsTopScroll(true);
-      } else {
-        setIsTopScroll(false);
-      }
-    };
-    window.addEventListener("scroll", isScroll);
-  }, []);
+  // const [isTopScroll, setIsTopScroll] = useState(false);
+  // console.log(isTopScroll);
+  // useEffect(() => {
+  //   const isScroll = () => {
+  //     if (window.scrollY > 0) {
+  //       setIsTopScroll(true);
+  //     } else {
+  //       setIsTopScroll(false);
+  //     }
+  //   };
+  //   window.addEventListener("scroll", isScroll);
+  // }, []);
 
   return (
     <>
       <div
         id="home"
-        className={` ${
-          isTopScroll ? "translate-x-[-100vw]" : "translate-x-[0vw]"
-        } hero h-screen bg-hero-pattern  bg-no-repeat bg-center  z-10  transform  transition-transform  delay-200 scroll-smooth `}
+        className="hero h-screen bg-hero-pattern  bg-no-repeat bg-center scroll-smooth"
       >
         <div>
           <div className="flex flex-col mb-9 lg:w-[735px]  lg:items-start  items-center    ">

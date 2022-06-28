@@ -7,13 +7,12 @@ import Experience from "./Pages/Experience";
 import Home from "./Pages/Home";
 import SmoothScroll from "smooth-scroll";
 
-import Data from "./Data/data.json";
-import { useEffect, useState } from "react";
+import Services from "./Pages/Services";
 // import { Layout } from "./patterns/layout";
 
-interface pageDataProps {
-  About: any;
-}
+// interface pageDataProps {
+//   About: any;
+// }
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -21,7 +20,7 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
 });
 
 function App() {
-  const [pageData, setPageData] = useState({} as pageDataProps);
+  // const [pageData, setPageData] = useState({} as pageDataProps);
 
   // let first = document.getElementById("home");
   // if (first) first.style.position = "relative";
@@ -29,15 +28,16 @@ function App() {
   // let second = document.getElementById("about");
   // if (second) second.style.position = "relative";
 
-  useEffect(() => {
-    setPageData(Data as any);
-  }, []);
+  // useEffect(() => {
+  //   setPageData(Data as any);
+  // }, []);
 
   return (
     <>
       <Navbar />
-      <About />
       <Home />
+      <About />
+      <Services />
       <Education />
       <Experience />
       <Contact />
