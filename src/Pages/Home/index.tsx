@@ -35,7 +35,7 @@ export default function Home() {
               {/* <span className="text-yellow-figma lg:text-7xl">.</span> */}
               <Typewriter
                 options={{
-                  wrapperClassName: "text-yellow-figma",
+                  wrapperClassName: "text-accent",
                   autoStart: true,
                   loop: true,
                   delay: 100,
@@ -51,7 +51,7 @@ export default function Home() {
             <Button
               title="hire"
               type="button"
-              className=" mt-9 font-light hover:text-white text-yellow-figma border-yellow-figma hover:border-yellow-figma  hover:bg-yellow-figma  lg:w-56 md:w-40 text-3xl rounded-2xl "
+              className=" mt-9 font-light hover:text-base-100 text-accent border-accent hover:border-accent-focus  hover:bg-accent  lg:w-56 md:w-40 text-3xl rounded-2xl "
             />
           </div>
         </div>

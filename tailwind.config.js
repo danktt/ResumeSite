@@ -18,17 +18,24 @@ module.exports = {
   daisyui: {
     themes: [
       {
-        "resume-light": {
-          primary: "#279d95",
-          "primary-content": "#FBFBFC",
-          secondary: "#E6B43C",
-          accent: "#37cdbe",
-          "accent-content": "#FBFBFC",
+        myThemes: {
+          primary: "#14213D",
+          secondary: "#0B0E12",
+          accent: "#FCA311",
           neutral: "#0B0E12",
-          "neutral-content": "#fff",
-          "base-100": "#FBFBFC",
-          "base-200": "#EBEBEB",
+          "base-100": "#ffffff",
+          "base-200": "#111827",
+          "primary-content": "#FBFBFC",
         },
+        // red: {
+        //   primary: "#0B0E12",
+        //   secondary: "#FBFBFC",
+        //   accent: "#FC1111",
+        //   neutral: "#0B0E12",
+        //   "base-100": "#ffffff",
+        //   "base-200": "#111827",
+        //   "primary-content": "#FBFBFC",
+        // },
       },
     ],
   },

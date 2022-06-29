@@ -89,7 +89,7 @@ export default function Contact() {
               <div className="mt-4">
                 <button
                   type="submit"
-                  className="inline-flex items-center justify-center w-full px-5 py-3 text-white bg-yellow-figma hover:bg-yellow-600 duration-100 rounded-lg sm:w-auto"
+                  className="inline-flex items-center justify-center w-full px-5 py-3 text-white bg-accent hover:bg-accent-focus duration-100 rounded-lg sm:w-auto"
                 >
                   <span className="font-medium"> Send message </span>
 
