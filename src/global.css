@@ -3,7 +3,11 @@
 @tailwind utilities;
 
 body {
-  @apply  text-white 
+  @apply  text-white
+
+  .swiper-container {
+    overflow: hidden;
+  }
 }
 
 @layer base {
