@@ -28,43 +28,32 @@ export default function About({ data }: dataProps) {
           </h2>
         </div>
 
-        <div className="px-4 py-16   sm:px-6 lg:px-8  ">
-          <div className="grid grid-cols-1 lg:grid-cols-2 w-3/4 mx-auto">
-            <div className="relative z-10 lg:py-16">
-              <div className="relative h-64 sm:h-80 lg:h-full">
+        <section>
+          <div className="max-w-screen-xl px-3 py-10 mx-auto sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 gap-8 lg:gap-16 lg:grid-cols-2">
+              <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full lg:order-last">
                 <img
-                  className="absolute inset-0 w-full h-full"
+                  className="absolute inset-0 object-cover w-full h-full"
                   src="https://www.github.com/danktt.png"
-                  alt="Indoors house"
+                  alt="Danilo Miranda"
                 />
               </div>
-            </div>
 
-            <div className="relative flex items-center bg-azul-turquesa">
-              <span className="hidden lg:inset-y-0 lg:absolute lg:w-16 lg:bg-azul-turquesa lg:block lg:-left-16"></span>
-
-              <div className="p-8 sm:p-16 lg:p-24">
-                <p className="mt-4 text-white">
-                  I started in the administrative area and was transferred to
-                  the communication technology sector, where I started as a
-                  computer maintenance technician. Then, I took a specialized
-                  course in telecommunications networks, where I went further in
-                  the technology area. I entered the Computer Engineering
-                  course, studied 5 semesters and did not finish. Currently I
-                  work with Information Technology, I am studying Systems
-                  Analysis and Development and programming
+              <div className="lg:py-24">
+                <p className="mt-4 text-base-100">
+                  My goal is always to expand my knowledge as a Dev, putting the
+                  acquired knowledge into practice, with ethics and
+                  responsibility. I always try my best to create the best
+                  applications, being in tune and communicative with the team is
+                  vital to the progress of the requirements. Currently, I work
+                  as a ReactJs Front-end developer. Knowledge of technologies:
+                  JavaScript, Typescript, ReactJs, NextJs Redux, Redux Sagas,
+                  Styled components, SASS, TailwindCss, Mock and TDD.
                 </p>
-
-                {/* <a
-                  className="inline-block px-12 py-3 mt-8 text-sm font-medium text-white bg-indigo-600 border border-indigo-600 rounded active:text-indigo-500 hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring"
-                  href="/contact"
-                >
-                  Get in Touch
-                </a> */}
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </main>
     </div>
   );
