@@ -34,7 +34,7 @@ export default function About({ data }: dataProps) {
               <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full lg:order-last">
                 <img
                   className="absolute inset-0 object-cover w-full h-full"
-                  src="https://www.github.com/danktt.png"
+                  src="https://media-exp1.licdn.com/dms/image/C4E03AQFRD-aNWlUVOg/profile-displayphoto-shrink_400_400/0/1654785141103?e=1663200000&v=beta&t=11p0eWECoXSJBZ0bASbypxU-xgRxfRGREYMNtnBM6GI"
                   alt="Danilo Miranda"
                 />
               </div>

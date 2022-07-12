@@ -13,14 +13,55 @@ export default function Services() {
         </h1>
       </div>
 
-      <main className=" flex flex-col items-center justify-center">
-        <div className=" flex gap-6">
-          <div className="w-40 h-40 rounded-2xl bg-primary">OI</div>
-          <div className="w-40 h-40 rounded-2xl bg-primary">OI</div>
-          <div className="w-40 h-40 rounded-2xl bg-primary">OI</div>
+      <div className="flex gap-8 justify-center mt-12">
+        <div className="card">
+          <div className="card__content">
+            <div className="card__front bg-primary ">
+              <h1 className="text-accent">FRONT-END</h1>
+            </div>
+            <div className="card__back bg-primary text-left ">
+              <h1 className="text-center text-accent">LANGUAGE CODE</h1>
+              <li className="ml-8">JavaScript</li>
+              <li className="ml-8">TypeScript</li>
+              <li className="ml-8">HTML/ CSS </li>
+              <h1 className="text-center text-accent">FRAMEWORK </h1>
+              <li className="ml-8">ReactJS</li>
+              <li className="ml-8">NextJs</li>
+            </div>
+          </div>
         </div>
 
-        <div className="flex flex-col gap-3 text-center">
+        <div className="card">
+          <div className="card__content">
+            <div className="card__front bg-primary ">
+              <h1 className="text-accent">BACK-END</h1>
+            </div>
+            <div className="card__back bg-primary text-left  ">
+              <h1 className="text-center text-accent">LANGUAGE CODE</h1>
+              <li className="ml-8">NodeJs</li>
+              <li className="ml-8">MySQL</li>
+            </div>
+          </div>
+        </div>
+
+        <div className="card">
+          <div className="card__content">
+            <div className="card__front bg-primary ">
+              <h1 className="text-accent">SYSTEMS</h1>
+            </div>
+            <div className="card__back bg-primary text-left ">
+              <h1 className="text-center text-accent">OPERATIONAL SYSTEM</h1>
+              <li className="ml-8">Linux</li>
+              <li className="ml-8">Windows</li>
+              <li className="ml-8">IOS </li>
+              <li className="ml-8">Android</li>
+              <li className="ml-8">NextJs</li>
+            </div>
+          </div>
+        </div>
+      </div>
+      <main className=" flex flex-col items-center justify-center mt-12">
+        <div className="flex flex-col gap-3 text-center mt-5">
           <h1 className="text-base-100">Hard Skills </h1>
           <Progress nameLangued="ReactJs" porcentege="93" value="93" />
           <Progress nameLangued="Git" porcentege="99" value="99" />
