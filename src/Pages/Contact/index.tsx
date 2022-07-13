@@ -1,16 +1,16 @@
 export default function Contact() {
   return (
-    <div id="contact" className=" bg-black-figma   scroll-smooth">
+    <div id="contact" className=" bg-secondary lg:h-screen  scroll-smooth">
       <div className="flex items-center justify-center pt-32 mb-4">
-        <span className="text-3xl text-yellow-figma underline  ">
-          <div className="relative rounded-sm  h-[9px] w-[9px] rotate-45 top-[36px] right-[8px]  bg-yellow-figma border border-solid border-yellow-figma  " />
+        <span className="text-3xl text-accent underline  ">
+          <div className="relative rounded-sm  h-[9px] w-[9px] rotate-45 top-[36px] right-[8px]  bg-accent border border-solid border-accent  " />
           CONTACT
         </span>
-        <h1 className="text-white lg:text-8xl text-5xl font-semibold">
+        <h1 className="text-base-100 lg:text-8xl text-5xl font-semibold">
           Get in Touch
         </h1>
       </div>
-      <div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
+      <div className="max-w-screen px-4  mx-auto sm:px-6 lg:px-24">
         <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
           <div className="lg:py-12 lg:col-span-2">
             <p className="max-w-xl text-lg">
@@ -20,7 +20,7 @@ export default function Contact() {
             </p>
 
             <div className="mt-8">
-              <a href="/#" className="text-2xl font-bold text-yellow-figma">
+              <a href="/#" className="text-2xl font-bold text-accent">
                 {" "}
                 0151 475 4450{" "}
               </a>
@@ -30,10 +30,9 @@ export default function Contact() {
             </div>
           </div>
 
-          <div className="p-8 bg-azul-turquesa rounded-lg shadow-lg lg:p-5 lg:col-span-3">
+          <div className="p-8 bg-primary rounded-lg shadow-lg lg:p-5 lg:col-span-3">
             <h1 className="text-4xl text-center mb-5">
-              How can I{" "}
-              <span className="text-yellow-figma text-4xl">help you?</span>{" "}
+              How can I <span className="text-accent text-4xl">help you?</span>{" "}
             </h1>
             <form action="" className="space-y-4">
               <div>
@@ -41,7 +40,7 @@ export default function Contact() {
                   Name
                 </label>
                 <input
-                  className="w-full p-3 text-sm border-gray-200 rounded-lg"
+                  className="w-full p-3 text-sm border-base-200 rounded-lg"
                   placeholder="Name"
                   type="text"
                   id="name"
@@ -54,7 +53,7 @@ export default function Contact() {
                     Email
                   </label>
                   <input
-                    className="w-full p-3 text-sm border-gray-200 rounded-lg"
+                    className="w-full p-3 text-sm border-base-200 rounded-lg"
                     placeholder="Email address"
                     type="email"
                     id="email"
@@ -66,7 +65,7 @@ export default function Contact() {
                     Phone
                   </label>
                   <input
-                    className="w-full p-3 text-sm border-gray-200 rounded-lg"
+                    className="w-full p-3 text-sm border-base-200 rounded-lg"
                     placeholder="Phone Number"
                     type="tel"
                     id="phone"
@@ -79,7 +78,7 @@ export default function Contact() {
                   Message
                 </label>
                 <textarea
-                  className="w-full p-3 text-sm border-gray-200 rounded-lg"
+                  className="w-full p-3 text-sm border-base-200 rounded-lg"
                   placeholder="Message"
                   rows={8}
                   id="message"
@@ -89,7 +88,7 @@ export default function Contact() {
               <div className="mt-4">
                 <button
                   type="submit"
-                  className="inline-flex items-center justify-center w-full px-5 py-3 text-white bg-accent hover:bg-accent-focus duration-100 rounded-lg sm:w-auto"
+                  className="inline-flex items-center justify-center w-full px-5 py-3 text-base-100 bg-accent hover:bg-accent-focus transition delay-150 rounded-lg sm:w-auto"
                 >
                   <span className="font-medium"> Send message </span>
 
@@ -113,8 +112,8 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <div className="pr-4">
-        <div className="bg-yellow-figma ml-auto  hover:bg-yellow-600 h-16 w-16 rounded-full flex items-center justify-center relative">
+      <div className="pr-4 ">
+        <div className="bg-accent ml-auto  hover:bg-accent-focus transition delay-150 h-14 w-14 rounded-full flex items-center justify-center relative">
           <a href="#home">
             <svg
               xmlns="http://www.w3.org/2000/svg"

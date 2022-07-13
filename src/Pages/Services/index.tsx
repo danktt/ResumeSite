@@ -2,18 +2,18 @@ import Progress from "../../Components/Progress";
 
 export default function Services() {
   return (
-    <div id="services" className="lg:h-screen bg-black-figma  scroll-smooth">
-      <div className="flex items-center justify-center pt-32 mb-4">
-        <span className="text-3xl text-yellow-figma underline  ">
-          <div className="relative rounded-sm  h-[9px] w-[9px] rotate-45 top-[36px] right-[8px]  bg-yellow-figma border border-solid border-yellow-figma  " />
+    <div id="services" className="lg:h-screen bg-secondary  scroll-smooth">
+      <div className="flex items-center justify-center pt-32 mb-4 ">
+        <span className="text-3xl text-accent underline  ">
+          <div className="relative rounded-sm  h-[9px] w-[9px] rotate-45 top-[36px] right-[8px]  bg-accent border border-solid border-accent  " />
           SERVICES
         </span>
-        <h1 className="text-white lg:text-8xl text-5xl font-semibold">
+        <h1 className="text-base-100 lg:text-8xl text-5xl font-semibold">
           What I do
         </h1>
       </div>
 
-      <div className="flex gap-8 justify-center mt-12">
+      <div className="lg:flex lg:flex-row lg:gap-28 md:gap-8 sm:flex-col  flex gap-3 items-center   md:flex-col justify-center mt-12">
         <div className="card">
           <div className="card__content">
             <div className="card__front bg-primary ">

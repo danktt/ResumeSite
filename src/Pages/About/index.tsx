@@ -6,13 +6,13 @@ interface dataProps {
 
 export default function About({ data }: dataProps) {
   return (
-    <div id="about" className="lg:h-screen bg-black-figma   scroll-smooth ">
+    <div id="about" className="lg:h-screen bg-secondary   scroll-smooth ">
       <div className="flex items-center justify-center pt-32 mb-4">
-        <span className="text-3xl text-yellow-figma underline  ">
-          <div className="relative rounded-sm  h-[9px] w-[9px] rotate-45 top-[36px] right-[8px]  bg-yellow-figma border border-solid border-yellow-figma  " />
+        <span className="text-3xl text-accent underline  ">
+          <div className="relative rounded-sm  h-[9px] w-[9px] rotate-45 top-[36px] right-[8px]  bg-accent border border-solid border-accent  " />
           ABOUT
         </span>
-        <h1 className="text-white lg:text-8xl text-5xl font-semibold">
+        <h1 className="text-base-100 lg:text-8xl text-5xl font-semibold">
           Know Me More
         </h1>
       </div>
@@ -20,10 +20,7 @@ export default function About({ data }: dataProps) {
       <main className="text-center pt-6 ">
         <div>
           <h2 className=" text-[40px]">
-            I'm{" "}
-            <span className="text-yellow-figma text-[40px]">
-              Danilo Miranda,
-            </span>{" "}
+            I'm <span className="text-accent text-[40px]">Danilo Miranda,</span>{" "}
             a Software Developer
           </h2>
         </div>

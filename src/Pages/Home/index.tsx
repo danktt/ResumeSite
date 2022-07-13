@@ -32,7 +32,7 @@ export default function Home() {
             </h1>
             <span className=" text-center  lg:text-[65px] md:text-[50px] text-[32px] font-bold ">
               {/* I’m Danilo Miranda */}
-              {/* <span className="text-yellow-figma lg:text-7xl">.</span> */}
+              {/* <span className="text-accent lg:text-7xl">.</span> */}
               <Typewriter
                 options={{
                   wrapperClassName: "text-accent",
@@ -58,7 +58,7 @@ export default function Home() {
         <div className="w-full pb-7  mt-auto md:flex md:justify-center hidden">
           <div className="flex justify-center gap-12  ">
             <a
-              className="text-3xl hover:text-yellow-figma delay-100 duration-100"
+              className="text-3xl hover:text-accent delay-100 duration-100"
               href="https://www.linkedin.com/in/danilo-miranda15/"
               target="_blank"
               rel="noreferrer"
@@ -67,7 +67,7 @@ export default function Home() {
             </a>
 
             <a
-              className="text-3xl hover:text-yellow-figma delay-100 duration-100"
+              className="text-3xl hover:text-accent delay-100 duration-100"
               href="https://web.whatsapp.com/"
               target="_blank"
               rel="noreferrer"
@@ -76,7 +76,7 @@ export default function Home() {
             </a>
 
             <a
-              className="text-3xl hover:text-yellow-figma delay-100 duration-100"
+              className="text-3xl hover:text-accent delay-100 duration-100"
               href="https://twitter.com/danktt_"
               target="_blank"
               rel="noreferrer"
@@ -85,7 +85,7 @@ export default function Home() {
             </a>
 
             <a
-              className="text-3xl hover:text-yellow-figma delay-100 duration-100"
+              className="text-3xl hover:text-accent delay-100 duration-100"
               href="https://www.facebook.com/danilo.miranda.1272"
               target="_blank"
               rel="noreferrer"
@@ -93,7 +93,7 @@ export default function Home() {
               <FaFacebookSquare />
             </a>
             <a
-              className="text-3xl hover:text-yellow-figma delay-100 duration-100"
+              className="text-3xl hover:text-accent delay-100 duration-100"
               href="https://www.instagram.com/danilo.mirandaa_/"
               target="_blank"
               rel="noreferrer"
@@ -101,7 +101,7 @@ export default function Home() {
               <AiFillInstagram />
             </a>
             <a
-              className="text-3xl hover:text-yellow-figma delay-100 duration-100"
+              className="text-3xl hover:text-accent delay-100 duration-100"
               href="https://github.com/danktt"
               target="_blank"
               rel="noreferrer"
@@ -109,7 +109,7 @@ export default function Home() {
               <BsGithub />
             </a>
             <a
-              className="text-3xl hover:text-yellow-figma delay-100 duration-100"
+              className="text-3xl hover:text-accent delay-100 duration-100"
               href="https://www.facebook.com/messages"
               target="_blank"
               rel="noreferrer"
