@@ -23,6 +23,7 @@ export default function Contact() {
               <a
                 href="https://contate.me/danilo-miranda"
                 target={"_blank"}
+                rel={"noreferrer"}
                 className="text-2xl font-bold text-accent"
               >
                 {" "}
