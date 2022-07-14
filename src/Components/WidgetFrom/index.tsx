@@ -13,6 +13,7 @@ export const feedbackTypes = {
       source: <BsLinkedin />,
       alt: "linkedin",
     },
+    link: "https://www.linkedin.com/in/danilo-miranda15/",
   },
   GITHUB: {
     title: "Github",
@@ -20,13 +21,16 @@ export const feedbackTypes = {
       source: <BsGithub />,
       alt: "github",
     },
+    link: "https://github.com/danktt",
   },
+
   WHATSAPP: {
     title: "Whatsapp",
     icon: {
       source: <IoLogoWhatsapp />,
       alt: "whatsapp",
     },
+    link: "https://contate.me/danilo-miranda",
   },
   INSTA: {
     title: "Instagram",
@@ -34,6 +38,7 @@ export const feedbackTypes = {
       source: <AiFillInstagram />,
       alt: "instagram",
     },
+    link: "https://www.instagram.com/danilo.mirandaa_/",
   },
   FACE: {
     title: "Facebook",
@@ -41,6 +46,7 @@ export const feedbackTypes = {
       source: <FaFacebookSquare />,
       alt: "facebook",
     },
+    link: "https://www.facebook.com/danilo.miranda.1272",
   },
   TWITTER: {
     title: "Twitter",
@@ -48,6 +54,7 @@ export const feedbackTypes = {
       source: <BsTwitter />,
       alt: "twitter",
     },
+    link: "https://twitter.com/danktt_",
   },
   MESSE: {
     title: "Messenger",
@@ -55,6 +62,7 @@ export const feedbackTypes = {
       source: <BsMessenger />,
       alt: "messenger",
     },
+    link: "https://www.facebook.com/messages",
   },
 };
 
@@ -64,7 +72,7 @@ export function WidgetForm() {
   const [feedbackType, setFeedbackType] = useState<FeedbackProps | null>(null);
 
   return (
-    <div className="bg-black-figma p-4 relative rounded-2xl mb-4 flex flex-col items-center shadow-lg w-[calc(100vw-2rem)] md:w-auto">
+    <div className="bg-secondary p-4 relative rounded-2xl mb-4 flex flex-col items-center shadow-lg w-[calc(100vw-2rem)] md:w-auto">
       {!feedbackType ? (
         <FeedbackTypesStep onFeedbackTypeChanged={setFeedbackType} />
       ) : (
@@ -72,7 +80,7 @@ export function WidgetForm() {
       )}
       <footer>
         Made by
-        <span className=" ml-1 text-yellow-figma">Danilo Miranda</span>
+        <span className=" ml-1 text-accent">Danilo Miranda</span>
       </footer>
     </div>
   );

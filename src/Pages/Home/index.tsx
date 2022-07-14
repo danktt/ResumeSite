@@ -1,4 +1,3 @@
-import Button from "../../Components/Button";
 import { BsGithub, BsLinkedin, BsMessenger, BsTwitter } from "react-icons/bs";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaFacebookSquare } from "react-icons/fa";
@@ -6,19 +5,6 @@ import { AiFillInstagram } from "react-icons/ai";
 import Typewriter from "typewriter-effect";
 
 export default function Home() {
-  // const [isTopScroll, setIsTopScroll] = useState(false);
-  // console.log(isTopScroll);
-  // useEffect(() => {
-  //   const isScroll = () => {
-  //     if (window.scrollY > 0) {
-  //       setIsTopScroll(true);
-  //     } else {
-  //       setIsTopScroll(false);
-  //     }
-  //   };
-  //   window.addEventListener("scroll", isScroll);
-  // }, []);
-
   return (
     <>
       <div
@@ -48,11 +34,12 @@ export default function Home() {
             </h2>
           </div>
           <div className="  w-full flex justify-center  ">
-            <Button
-              title="hire"
-              type="button"
-              className=" mt-9 font-light hover:text-base-100 text-accent border-accent hover:border-accent-focus  hover:bg-accent  lg:w-56 md:w-40 text-3xl rounded-2xl "
-            />
+            <a
+              href="#contact"
+              className="btn-outline btn mt-9 font-light hover:text-base-100 text-accent border-accent hover:border-accent-focus  hover:bg-accent  lg:w-56 md:w-40 text-3xl rounded-2xl "
+            >
+              hire
+            </a>
           </div>
         </div>
         <div className="w-full pb-7  mt-auto md:flex md:justify-center hidden">
@@ -68,7 +55,7 @@ export default function Home() {
 
             <a
               className="text-3xl hover:text-accent delay-100 duration-100"
-              href="https://web.whatsapp.com/"
+              href="https://contate.me/danilo-miranda"
               target="_blank"
               rel="noreferrer"
             >

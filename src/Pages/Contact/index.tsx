@@ -2,11 +2,11 @@ export default function Contact() {
   return (
     <div id="contact" className=" bg-secondary lg:h-screen  scroll-smooth">
       <div className="flex items-center justify-center pt-32 mb-4">
-        <span className="text-3xl text-accent underline  ">
-          <div className="relative rounded-sm  h-[9px] w-[9px] rotate-45 top-[36px] right-[8px]  bg-accent border border-solid border-accent  " />
+        <span className="lg:text-3xl text-base text-accent underline  ">
+          <div className="relative rounded-sm h-[4px] w-[4px] lg:h-[9px] lg:w-[9px] rotate-45 lg:top-[36px] top-[21px] lg:right-[8px] right-[4px]  bg-accent border border-solid border-accent  " />
           CONTACT
         </span>
-        <h1 className="text-base-100 lg:text-8xl text-5xl font-semibold">
+        <h1 className="text-base-100  lg:text-8xl text-4xl font-semibold">
           Get in Touch
         </h1>
       </div>
@@ -20,9 +20,13 @@ export default function Contact() {
             </p>
 
             <div className="mt-8">
-              <a href="/#" className="text-2xl font-bold text-accent">
+              <a
+                href="https://contate.me/danilo-miranda"
+                target={"_blank"}
+                className="text-2xl font-bold text-accent"
+              >
                 {" "}
-                0151 475 4450{" "}
+                +55 67 991612644{" "}
               </a>
               <address className="mt-2 not-italic">
                 282 Kevin Brook, Imogeneborough, CA 58517

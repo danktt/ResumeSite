@@ -5,12 +5,16 @@ export default function Faqs() {
         <details className="p-3 border-l-4 border-accent bg-primary group rounded-lg hover:bg-primary-focus delay-150 transition">
           <summary className="flex items-center flex-col justify-between cursor-pointer">
             <div className="flex justify-between w-3/4 m-auto">
-              <h5 className="text-lg font-medium text-base-100">SBanco </h5>
-              <span className="text-accent">2022 – Currently </span>
+              <h5 className="font-medium text-base-100 lg:text-lg text-sm">
+                SBanco{" "}
+              </h5>
+              <span className="text-accent text-sm lg:text-lg">
+                2022 – Currently{" "}
+              </span>
             </div>
 
             <div>
-              <p className="text-3xl">Frontend Developer</p>
+              <p className="lg:text-3xl text-xl">Frontend Developer</p>
             </div>
           </summary>
 
@@ -26,14 +30,16 @@ export default function Faqs() {
         <details className="p-3 border-l-4 border-accent bg-primary group rounded-lg hover:bg-primary-focus delay-150 transition">
           <summary className="flex items-center flex-col justify-between cursor-pointer">
             <div className="flex justify-between w-3/4 m-auto">
-              <h5 className="text-lg font-medium text-base-100">
+              <h5 className="lg:text-lg text-sm font-medium text-base-100">
                 Brazilian Army{" "}
               </h5>
-              <span className="text-accent">2018 – 2022</span>
+              <span className="text-accent text-sm lg:text-lg">
+                2018 – 2022
+              </span>
             </div>
 
             <div>
-              <p className="text-3xl">Developer</p>
+              <p className="lg:text-3xl text-xl">Developer</p>
             </div>
           </summary>
 
@@ -49,14 +55,18 @@ export default function Faqs() {
         <details className="p-3 border-l-4 border-accent bg-primary hover:bg-primary-focus delay-150 transition group rounded-lg">
           <summary className="flex items-center flex-col justify-between cursor-pointer">
             <div className="flex justify-between w-3/4 m-auto">
-              <h5 className="text-lg font-medium text-base-100">
+              <h5 className=" font-medium text-base-100 lg:text-lg text-sm">
                 Brazilian Army{" "}
               </h5>
-              <span className="text-accent">2019 – 2020 </span>
+              <span className="text-accent text-sm lg:text-lg">
+                2019 – 2020{" "}
+              </span>
             </div>
 
             <div>
-              <p className="text-3xl">Information Technology Technician</p>
+              <p className="lg:text-3xl text-xl">
+                Information Technology Technician
+              </p>
             </div>
           </summary>
 

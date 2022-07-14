@@ -17,15 +17,15 @@ export function FeedbackTypesStep({
       <div className="flex py-8 gap-2 w-full carousel ">
         {Object.entries(feedbackTypes).map(([key, value]) => {
           return (
-            <button
+            <a
+              href={value.link}
               key={key}
-              className="hover:scale-110 ease-in-out carousel-item  flex flex-col items-center py-5 w-24  bg-gray-800 delay-100 duration-300 rounded-lg gap-2 border-2 border-transparent   hover:text-yellow-figma "
-              onClick={() => onFeedbackTypeChanged(key as FeedbackProps)}
-              type="button"
+              className="hover:scale-110 ease-in-out carousel-item  flex flex-col items-center py-5 w-24  bg-primary delay-100 duration-300 rounded-lg gap-2 border-2 border-transparent   hover:text-yellow-figma "
+              // onClick={() => onFeedbackTypeChanged(key as FeedbackProps)}
             >
               <i className=" h-5 gap text-3xl">{value.icon.source}</i>
               <span className="">{value.title}</span>
-            </button>
+            </a>
           );
         })}
       </div>

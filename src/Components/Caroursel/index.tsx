@@ -19,21 +19,21 @@ export default function Carousel() {
           clickable: true,
         }}
         modules={[Mousewheel, Pagination]}
-        className="mySwiper max-w-4xl max-h-[400px]"
+        className="mySwiper  max-w-4xl max-h-[400px]"
       >
-        <SwiperSlide className=" flex flex-col justify-start bg-primary rounded-b-3xl rounded-t-3xl">
+        <SwiperSlide className=" flex flex-col justify-start bg-primary rounded-b-3xl rounded-t-3xl ">
           <div className="flex flex-col p-5 text-base-100">
             <span className="text-accent self-start">2020 – 2023</span>
-            <header className="p-5">
-              <h1 className="text-3xl">University Unicesumar </h1>
+            <header className="lg:p-5 ">
+              <h1 className="lg:text-3xl text-2xl">University Unicesumar </h1>
             </header>
             <div className="p-4 font-bold">
-              <h2 className="text-2xl">
+              <h2 className="lg:text-2xl text-sm">
                 {" "}
                 Diploma Technologist System <br /> analysis and development
               </h2>
             </div>
-            <p className="text-sm lg:text-base">
+            <p className="text-sm lg:text-base text-sm">
               The course aimed at training, enabling professional performance in
               the areas of software development, interfaces and applications.
               Possibility to manage systems projects in multidisciplinary teams,
@@ -49,11 +49,11 @@ export default function Carousel() {
         <SwiperSlide className=" flex flex-col justify-start bg-primary rounded-b-3xl  rounded-t-3xl ">
           <div className="flex flex-col p-5 text-base-100">
             <span className="text-accent self-start">2021 – 2021</span>
-            <header className="p-5">
-              <h1 className="text-3xl">Ignite Bootcamp</h1>
+            <header className="lg:p-5">
+              <h1 className="lg:text-3xl text-2xl">Ignite Bootcamp</h1>
             </header>
             <div className="p-4 font-bold">
-              <h2 className="text-2xl"> Rocketseakt, Brazil</h2>
+              <h2 className="lg:text-2xl text-sm"> Rocketseakt, Brazil</h2>
             </div>
             <p className="text-sm lg:text-base">
               Construction of a mini financial system with HTML, CSS and JS and
