@@ -10,7 +10,7 @@ export default function Contact() {
           Get in Touch
         </h1>
       </div>
-      <div className="max-w-screen px-4  mx-auto sm:px-6 lg:px-24">
+      <div className="max-w-screen px-4  mx-auto sm:px-6 lg:px-24 ">
         <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
           <div className="lg:py-12 lg:col-span-2">
             <p className="max-w-xl text-lg">
@@ -30,7 +30,7 @@ export default function Contact() {
                 +55 67 991612644{" "}
               </a>
               <address className="mt-2 not-italic">
-                282 Kevin Brook, Imogeneborough, CA 58517
+                Curitiba - PR, Brazil 🇧🇷
               </address>
             </div>
           </div>

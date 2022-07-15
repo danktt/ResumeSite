@@ -8,11 +8,9 @@ import Home from "./Pages/Home";
 import SmoothScroll from "smooth-scroll";
 
 import Services from "./Pages/Services";
-// import { Layout } from "./patterns/layout";
+import { useState } from "react";
 
-// interface pageDataProps {
-//   About: any;
-// }
+import Loading from "./Components/Loading";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -20,6 +18,7 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
 });
 
 function App() {
+  const [loading, setLoading] = useState(true);
   // const [pageData, setPageData] = useState({} as pageDataProps);
 
   // let first = document.getElementById("home");
@@ -31,17 +30,27 @@ function App() {
   // useEffect(() => {
   //   setPageData(Data as any);
   // }, []);
+  // eslint-disable-next-line
 
+  setTimeout(() => {
+    setLoading(false);
+  }, 1200);
   return (
     <>
-      <Navbar />
-      <Home />
-      <About />
-      <Services />
-      <Education />
-      <Experience />
-      <Contact />
-      <Widget />
+      {loading ? (
+        <Loading />
+      ) : (
+        <>
+          <Navbar />
+          <Home />
+          <About />
+          <Services />
+          <Education />
+          <Experience />
+          <Contact />
+          <Widget />ß
+        </>
+      )}
     </>
   );
 }
