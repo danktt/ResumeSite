@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <div
         id="home"
-        className="hero h-screen bg-hero-pattern  bg-no-repeat bg-center scroll-smooth"
+        className="hero h-screen bg-secondary bg-hero-pattern  bg-no-repeat bg-center scroll-smooth"
       >
         <div>
           <div className="flex flex-col mb-9 lg:w-[735px]  lg:items-start  items-center    ">

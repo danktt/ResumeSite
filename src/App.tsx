@@ -48,7 +48,7 @@ function App() {
           <Education />
           <Experience />
           <Contact />
-          <Widget />ß
+          <Widget />
         </>
       )}
     </>

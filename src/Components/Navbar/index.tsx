@@ -2,7 +2,7 @@
 import { Fragment, useEffect, useState } from "react";
 import { Disclosure, Menu, Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
-
+import CV from "../../assets/Resume-Danilo-Miranda.pdf";
 // Icons
 import { AiFillHome } from "react-icons/ai";
 import { BsFillFilePersonFill } from "react-icons/bs";
@@ -12,7 +12,7 @@ import { RiContactsBookFill } from "react-icons/ri";
 import { MdOutlineMiscellaneousServices } from "react-icons/md";
 
 const navigation = [
-  { name: "Home", href: "#home", current: true, icon: <AiFillHome /> },
+  { name: "Home", href: "#home", current: false, icon: <AiFillHome /> },
   {
     name: "About",
     href: "#about",
@@ -242,7 +242,8 @@ export default function Navbar() {
                         {({ active }) => (
                           // eslint-disable-next-line
                           <a
-                            href="#"
+                            href={CV}
+                            target="_blank"
                             className={classNames(
                               active ? "bg-gray-100" : "",
                               "block px-4 py-2 text-sm text-gray-700"
