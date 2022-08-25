@@ -55,7 +55,6 @@ export default function Services() {
               <li className="ml-8">Windows</li>
               <li className="ml-8">IOS </li>
               <li className="ml-8">Android</li>
-              <li className="ml-8">NextJs</li>
             </div>
           </div>
         </div>

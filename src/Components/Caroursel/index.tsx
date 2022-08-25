@@ -53,7 +53,7 @@ export default function Carousel() {
               <h1 className="lg:text-3xl text-2xl">Ignite Bootcamp</h1>
             </header>
             <div className="p-4 font-bold">
-              <h2 className="lg:text-2xl text-sm"> Rocketseakt, Brazil</h2>
+              <h2 className="lg:text-2xl text-sm"> Rocketseat, Brazil</h2>
             </div>
             <p className="text-sm lg:text-base">
               Construction of a mini financial system with HTML, CSS and JS and
