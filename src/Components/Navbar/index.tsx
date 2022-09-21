@@ -4,7 +4,7 @@ import { Disclosure, Menu, Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import CV from "../../assets/Resume-Danilo-Miranda.pdf";
 // Icons
-import { AiFillHome } from "react-icons/ai";
+import { AiFillHome, AiOutlineCloudDownload } from "react-icons/ai";
 import { BsFillFilePersonFill } from "react-icons/bs";
 import { IoSchool } from "react-icons/io5";
 import { FaNewspaper } from "react-icons/fa";
@@ -246,24 +246,11 @@ export default function Navbar() {
                             target="_blank"
                             className={classNames(
                               active ? "bg-gray-100" : "",
-                              "block px-4 py-2 text-sm text-gray-700"
+                              " py-2 text-sm text-gray-700 flex justify-center items-center gap-2"
                             )}
                           >
+                            <AiOutlineCloudDownload size={24} />
                             Download CV
-                          </a>
-                        )}
-                      </Menu.Item>
-                      <Menu.Item>
-                        {({ active }) => (
-                          // eslint-disable-next-line
-                          <a
-                            href="#"
-                            className={classNames(
-                              active ? "bg-gray-100" : "",
-                              "block px-4 py-2 text-sm text-gray-700"
-                            )}
-                          >
-                            Setting
                           </a>
                         )}
                       </Menu.Item>
