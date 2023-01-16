@@ -13,7 +13,7 @@ export default function Experience() {
         </h1>
       </div>
 
-      <div className="lg:w-3/5 mx-3 lg:m-auto mt-5">
+      <div className="lg:w-3/5 mx-3 lg:m-auto mt-5 pt-6">
         <Faqs />
       </div>
     </div>

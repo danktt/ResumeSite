@@ -17,8 +17,6 @@ export default function Home() {
               Welcome
             </h1>
             <span className=" text-center  lg:text-[65px] md:text-[50px] text-[32px] font-bold ">
-              {/* I’m Danilo Miranda */}
-              {/* <span className="text-accent lg:text-7xl">.</span> */}
               <Typewriter
                 options={{
                   wrapperClassName: "text-accent",

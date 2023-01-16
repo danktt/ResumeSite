@@ -1,15 +1,39 @@
 export default function Faqs() {
   return (
     <>
-      <div className="space-y-2">
+      <div className="">
         <details className="p-3 border-l-4 border-accent bg-primary group rounded-lg hover:bg-primary-focus delay-150 transition">
           <summary className="flex items-center flex-col justify-between cursor-pointer">
             <div className="flex justify-between w-3/4 m-auto">
-              <h5 className="font-medium text-base-100 lg:text-lg text-sm">
-                SBanco{" "}
+              <h5 className="font-medium text-base-100 lg:text-lg text-sm flex items-center gap-2">
+                <span className="text-4xl">🇬🇧</span> CF Partners
               </h5>
               <span className="text-accent text-sm lg:text-lg">
-                2022 – Currently{" "}
+                November 2022 - Currently
+              </span>
+            </div>
+
+            <div>
+              <p className="lg:text-3xl text-xl">Software Engineer</p>
+            </div>
+          </summary>
+
+          <p className="mt-4 leading-relaxed text-base-100 text-center">
+            React Js | Next Js | Typescript | Javascript | Jest | Tailwindcss |
+            DaisyUI
+          </p>
+        </details>
+      </div>
+      <br />
+      <div className="space-y-4">
+        <details className="p-3 border-l-4 border-accent bg-primary group rounded-lg hover:bg-primary-focus delay-150 transition">
+          <summary className="flex items-center flex-col justify-between cursor-pointer">
+            <div className="flex justify-between w-3/4 m-auto">
+              <h5 className="font-medium text-base-100 lg:text-lg text-sm flex items-center gap-2">
+                <span className="text-4xl">🇧🇷</span>SBanco
+              </h5>
+              <span className="text-accent text-sm lg:text-lg">
+                2022 – November 2022
               </span>
             </div>
 
@@ -30,8 +54,8 @@ export default function Faqs() {
         <details className="p-3 border-l-4 border-accent bg-primary group rounded-lg hover:bg-primary-focus delay-150 transition">
           <summary className="flex items-center flex-col justify-between cursor-pointer">
             <div className="flex justify-between w-3/4 m-auto">
-              <h5 className="lg:text-lg text-sm font-medium text-base-100">
-                Brazilian Army{" "}
+              <h5 className="lg:text-lg text-sm font-medium text-base-100 flex items-center gap-2 ">
+                <span className="text-4xl">🇧🇷</span>SBanco Brazilian Army
               </h5>
               <span className="text-accent text-sm lg:text-lg">
                 2018 – 2022
@@ -55,8 +79,8 @@ export default function Faqs() {
         <details className="p-3 border-l-4 border-accent bg-primary hover:bg-primary-focus delay-150 transition group rounded-lg">
           <summary className="flex items-center flex-col justify-between cursor-pointer">
             <div className="flex justify-between w-3/4 m-auto">
-              <h5 className=" font-medium text-base-100 lg:text-lg text-sm">
-                Brazilian Army{" "}
+              <h5 className=" font-medium text-base-100 lg:text-lg text-sm flex items-center gap-2">
+                <span className="text-4xl">🇧🇷</span> Brazilian Army
               </h5>
               <span className="text-accent text-sm lg:text-lg">
                 2019 – 2020{" "}

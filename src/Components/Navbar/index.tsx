@@ -72,7 +72,9 @@ export default function Navbar() {
     <Disclosure
       as="nav"
       className={`${
-        isTopNav ? "bg-slate-600  " : "bg-transparent z-20"
+        isTopNav
+          ? "  bg-gradient-to-r from-transparent via-black to-transparent "
+          : "bg-transparent z-20"
       } w-full fixed z-20`}
     >
       {({ open }) => (
@@ -149,7 +151,7 @@ export default function Navbar() {
                                 item.current
                                   ? "bg-yellow-figma text-white  flex gap-1.5 items-center justify-center text-lg"
                                   : "text-white  hover:text-yellow-figma flex gap-1.5 items-center justify-center  text-lg",
-                                "px-3 py-2 rounded-md text-sm font-medium justify-center text-lg"
+                                "px-3 py-2 rounded-md text-sm font-medium justify-center "
                               )}
                               aria-current={item.current ? "page" : true}
                             >
